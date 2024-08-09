@@ -1,6 +1,11 @@
-import {Schema,model} from 'mpngoose';
+import {Schema,model} from 'mongoose';
 
 const transactionSchema =new Schema({
+
+    title:{
+        type:String,
+        required:true
+    },
 
     amount :{
         type:Number,
@@ -22,4 +27,6 @@ const transactionSchema =new Schema({
     timestamp:true
 })
 
-const Transaction = model("Transaction", transactionSchema)
+const Transaction = model("Transaction", transactionSchema)  
+
+export default Transaction;
