@@ -2,6 +2,7 @@ import "./Signup.css"
 import { useState } from 'react';
 import axios from 'axios'
 import toast, { Toaster } from "react-hot-toast"
+import {Link} from "react-router-dom"
 
 function Signup() {
 
@@ -36,7 +37,7 @@ function Signup() {
   return (<>
     <h1 className="auth-heading">User Registration</h1>
 
-    <form className="signup-form">
+    <form className="auth-form">
       <input type="text"
         placeholder="Enter Full Name"
         className="user-input"
@@ -72,8 +73,12 @@ function Signup() {
           setdob(e.target.value);
         }} />
 
-      <button type="button" className="auth-btn" onClick={signup}>Register Now</button>
+      <button type="button" className="auth-btn" onClick={signup}>Signup Here</button>
+      
+      
     </form>
+    <Link to="/login" className="auth-link">Already have an account ? Log in.</Link>
+      
     <Toaster />
   </>
   )

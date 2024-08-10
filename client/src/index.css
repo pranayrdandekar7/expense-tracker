@@ -1,6 +1,15 @@
 body{
   background-color: whitesmoke;
 }
+.auth-form{
+  width: 400px;
+  padding: 10px;
+  display: block;
+  margin: 40px auto;
+  border: 2px double #6600ff;
+  border-radius: 15px;
+  background-color: #ccb4f0;
+}
 
 .user-input{
   display: block;
@@ -29,5 +38,15 @@ color:  #6600ff;
   font-size: 20px;
   cursor: pointer;
   display: block;
-  margin: 25px auto;
+  margin: 30px auto;
+}
+.auth-btn:hover{
+  background-color:#290958;
+}
+.auth-link{
+  font-size: 30px;
+  color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
