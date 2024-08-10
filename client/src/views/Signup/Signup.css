@@ -1,0 +1,10 @@
+.signup-form{
+    width: 400px;
+    height: 300px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    border: 2px double #6600ff;
+    border-radius: 15px;
+    background-color: #ccb4f0;
+}
