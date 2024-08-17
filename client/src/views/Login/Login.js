@@ -10,7 +10,7 @@ function Login() {
   const [password, setPassword] = useState("")
 
   const loginNow = async () => {
-
+   
     const response =await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`,
       {
         email:email,
@@ -20,6 +20,9 @@ function Login() {
    if(response.data.success)
    {
     toast.success(response.data.message)
+
+    localStorage.setItem('currentUser',JSON.stringify(response.data.data))
+    window.location.href="/"
    }
    else{
     toast.error(response.data.message)
@@ -57,3 +60,8 @@ function Login() {
 }
 
 export default Login
+
+
+
+
+
