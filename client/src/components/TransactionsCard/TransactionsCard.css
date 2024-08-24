@@ -4,7 +4,8 @@
     padding: 20px;
     border-radius: 10px;
     width: 70%;
-    box-shadow: 0 0 5px 1px gray;
+    background-color: white;
+    box-shadow: 0 0 10px  gray;
     position: relative;
 }
 .transaction-card-title{
@@ -13,8 +14,22 @@
 
 }
 .transaction-card-amount{
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 10px;
+}
+.transaction-cart-time{
+    font-size: 18px;
+  
+}
+.transaction-card-category{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    background-color: #6600ff;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 20px;
 }

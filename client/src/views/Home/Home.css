@@ -1,7 +1,14 @@
 .main-heading{
+    font-size:35px;
+    text-align: center;
+    margin: 0;
+}
+
+
+.home-greeting{
     color: #6600ff;
     text-align: center;
-    margin-top: 30px;
+   margin: 0;
 }
 .logout-btn{
     position: fixed;
@@ -13,4 +20,30 @@
     padding: 5px 20px;
     border-radius: 20px;
     cursor: pointer;
+}
+.net-transactions-card{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+   
+}
+.net-transactions-card-item{
+    width: 200px;
+    border: 4px double #6600ff;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.net-transaction-cart-amout{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.net-transaction-card-title{
+    font-size: 20px;
+    display: block;
+    text-align: center;
 }
