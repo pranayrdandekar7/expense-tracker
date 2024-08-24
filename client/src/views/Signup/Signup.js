@@ -77,7 +77,7 @@ function Signup() {
       
       
     </form>
-    <Link to="/login" className="auth-link">Already have an account ? Log in.</Link>
+    <Link to="/login" className="auth-link">Already have an account ?  <span className="account-auth">Login</span></Link>
       
     <Toaster />
   </>

@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./Login.css"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import toast,{Toaster} from "react-hot-toast"
+import toast, { Toaster } from "react-hot-toast"
 
 function Login() {
 
@@ -10,23 +10,28 @@ function Login() {
   const [password, setPassword] = useState("")
 
   const loginNow = async () => {
-   
-    const response =await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`,
+
+    const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`,
       {
-        email:email,
-        password:password
+        email: email,
+        password: password
       })
 
-   if(response.data.success)
-   {
-    toast.success(response.data.message)
+    if (response.data.success) {
+      toast.success(response.data.message)
 
-    localStorage.setItem('currentUser',JSON.stringify(response.data.data))
-    window.location.href="/"
-   }
-   else{
-    toast.error(response.data.message)
-   }
+      localStorage.setItem('currentUser', JSON.stringify(response.data.data))
+
+      toast.loading(`Redirecting to dashboard`)
+
+      setTimeout(() => {
+          window.location.href = "/"
+      }, 500)
+
+    }
+    else {
+      toast.error(response.data.message)
+    }
 
   }
   return (
@@ -53,8 +58,8 @@ function Login() {
         <button type="button" className="auth-btn" onClick={loginNow}>Login Here</button>
 
       </form>
-      <Link to="/signup" className="auth-link">Don't have an account ?  Signup</Link>
-      <Toaster/>
+      <Link to="/signup" className="auth-link">Don't have an account ? <span className="account-auth">Signup</span> </Link>
+      <Toaster />
     </>
   )
 }

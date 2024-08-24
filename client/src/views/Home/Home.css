@@ -1,0 +1,16 @@
+.main-heading{
+    color: #6600ff;
+    text-align: center;
+    margin-top: 30px;
+}
+.logout-btn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    background-color: #6600ff;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}

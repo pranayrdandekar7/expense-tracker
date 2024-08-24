@@ -1,0 +1,20 @@
+.transaction_card{
+    border: 1px solid gray;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 0 5px 1px gray;
+    position: relative;
+}
+.transaction-card-title{
+    margin: 0;
+    font-size: 30px;
+
+}
+.transaction-card-amount{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
