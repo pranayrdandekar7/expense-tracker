@@ -80,34 +80,36 @@ function Home() {
 
       }}>Logout</span>
 
-      <div className="net-transactions-card">
+      <div className="net-transactions-card-container">
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-            {netIncome}
+            {netIncome} ₹ 
           </span>
           <span className="net-transaction-card-title">
-           Total Income
+            Total Income
           </span>
         </div>
 
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-            {netExpense}
+            {netExpense} ₹ 
           </span>
           <span className="net-transaction-card-title">
-           Total Expense
+            Total Expense
           </span>
         </div>
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-            {netIncome - netExpense}
+            {netIncome - netExpense} ₹ 
           </span>
           <span className="net-transaction-card-title">
-           Totol Balance
+            Totol Balance
           </span>
         </div>
       </div>
 
+
+     <div className="transaction-card-container">
       {
         transactions.map((transaction) => {
           const { _id, title, amount, category, type, createdAt } = transaction
@@ -123,6 +125,7 @@ function Home() {
           )
         })
       }
+      </div>
       <Toaster />
     </>
   )
