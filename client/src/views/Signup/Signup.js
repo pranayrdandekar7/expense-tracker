@@ -28,6 +28,11 @@ function Signup() {
       setemail("");
       setpassword("");
       setdob("");
+
+      setTimeout(() => {
+        window.location.href = "/login"
+    }, 400)
+
     }
     else {
       toast.error(response.data.message)

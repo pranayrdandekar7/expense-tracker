@@ -4,7 +4,7 @@ import "./Home.css"
 import axios from "axios"
 import TransactionsCard from "../../components/TransactionsCard/TransactionsCard"
 import AddTransactionIcon from "./add-transaction-icon.png"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 function Home() {
@@ -85,7 +85,7 @@ function Home() {
       <div className="net-transactions-card-container">
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-           + {netIncome} ₹ 
+            + {netIncome} ₹
           </span>
           <span className="net-transaction-card-title">
             Total Income
@@ -94,7 +94,7 @@ function Home() {
 
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-           - {netExpense} ₹ 
+            - {netExpense} ₹
           </span>
           <span className="net-transaction-card-title">
             Total Expense
@@ -102,7 +102,7 @@ function Home() {
         </div>
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-            {netIncome - netExpense} ₹ 
+            {netIncome - netExpense} ₹
           </span>
           <span className="net-transaction-card-title">
             Total Balance
@@ -111,26 +111,26 @@ function Home() {
       </div>
 
 
-     <div className="transaction-card-container">
-      {
-        transactions.map((transaction) => {
-          const { _id, title, amount, category, type, createdAt } = transaction
-          return (<TransactionsCard
-            _id={_id}
-            key={_id}
-            title={title}
-            amount={amount}
-            category={category}
-            type={type}
-            createdAt={createdAt}
-            loadTransaction={loadTransaction}
-          />
-          )
-        })
-      }
+      <div className="transaction-card-container">
+        {
+          transactions.map((transaction) => {
+            const { _id, title, amount, category, type, createdAt } = transaction
+            return (<TransactionsCard
+              _id={_id}
+              key={_id}
+              title={title}
+              amount={amount}
+              category={category}
+              type={type}
+              createdAt={createdAt}
+              loadTransaction={loadTransaction}
+            />
+            )
+          })
+        }
       </div>
       <Link to="/add-transaction">
-      <img src={AddTransactionIcon} alt="add-transcation-icon" className="add-transaction-icon" />
+        <img src={AddTransactionIcon} alt="add-transcation-icon" className="add-transaction-icon" />
       </Link>
       <Toaster />
     </>
