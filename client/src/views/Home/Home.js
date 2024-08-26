@@ -3,6 +3,8 @@ import toast, { Toaster } from "react-hot-toast"
 import "./Home.css"
 import axios from "axios"
 import TransactionsCard from "../../components/TransactionsCard/TransactionsCard"
+import AddTransactionIcon from "./add-transaction-icon.png"
+import {Link} from "react-router-dom"
 
 
 function Home() {
@@ -83,7 +85,7 @@ function Home() {
       <div className="net-transactions-card-container">
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-            {netIncome} ₹ 
+           + {netIncome} ₹ 
           </span>
           <span className="net-transaction-card-title">
             Total Income
@@ -92,7 +94,7 @@ function Home() {
 
         <div className="net-transactions-card-item">
           <span className="net-transaction-cart-amout">
-            {netExpense} ₹ 
+           - {netExpense} ₹ 
           </span>
           <span className="net-transaction-card-title">
             Total Expense
@@ -103,7 +105,7 @@ function Home() {
             {netIncome - netExpense} ₹ 
           </span>
           <span className="net-transaction-card-title">
-            Totol Balance
+            Total Balance
           </span>
         </div>
       </div>
@@ -126,6 +128,9 @@ function Home() {
         })
       }
       </div>
+      <Link to="/add-transaction">
+      <img src={AddTransactionIcon} alt="add-transcation-icon" className="add-transaction-icon" />
+      </Link>
       <Toaster />
     </>
   )

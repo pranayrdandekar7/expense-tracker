@@ -13,6 +13,8 @@ const postTransaction = async (req, res) => {
         user: user
     })
 
+   
+
     try {
 
         const savedTransaction = await transaction.save();
