@@ -68,7 +68,7 @@ function Home() {
 
   return (
     <>
-      <h1 className="main-heading">Hello , {user.fullname}</h1>
+      <h1 className="main-heading">Hello , {user?.fullname?.toUpperCase()}</h1>
       <h1 className="home-greeting">Welcome To The Expense Tracker</h1>
 
       <span className="logout-btn" onClick={() => {
@@ -116,6 +116,7 @@ function Home() {
         transactions.map((transaction) => {
           const { _id, title, amount, category, type, createdAt } = transaction
           return (<TransactionsCard
+            _id={_id}
             key={_id}
             title={title}
             amount={amount}

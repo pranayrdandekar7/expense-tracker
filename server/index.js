@@ -8,7 +8,7 @@ dotenv.config();
 
 import { postSignup ,postLogin} from './controllers/user.js';
 
-import { postTransaction,getTransactions } from './controllers/transaction.js';
+import { postTransaction,getTransactions,deleteTransaction } from './controllers/transaction.js';
 import { getHealth } from './controllers/health.js';
 
 
@@ -38,6 +38,8 @@ app.post("/login",postLogin )
 app.post("/transaction",postTransaction)
 
 app.get("/transactions",getTransactions)
+
+app.delete("/transaction/:id",deleteTransaction)
 
 
 

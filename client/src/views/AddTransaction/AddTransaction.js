@@ -24,7 +24,15 @@ function AddTransaction() {
     },[])
 
     const addTransaction =async ()=>{
+        
 
+        if(!title || !amount || !category || !type || !user ){
+
+            toast.error(`All feilds are mandatory`)
+            return ;
+        
+        }
+         
         
         const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/transaction`,{
             title,
@@ -33,19 +41,20 @@ function AddTransaction() {
             category,
             user: user._id
         })
-        if(!title || !amount || ! category || !type || !user ){
 
-            toast.error(`All feilds are mandatory`)
-            return
+        if(response){
+            toast.success(`Transaction saved successfully`)
         
-        }
-         if(response){
-        toast.success(`Transaction saved successfully`)
 
         setTitle("")
         setAmount(0)
         setType("credit")
         setCategory("learning")
+
+        setTimeout(()=>{
+        window.location.href="/"
+        },1000)
+        
          }
     }
     
@@ -84,6 +93,7 @@ function AddTransaction() {
                         setCategory(e.target.value);
 
                     }}>
+                     <option>Category</option>
                     <option value="Food">Food</option>
                     <option value="Transportation">Transportation</option>
                     <option value="Utilies">Utilities</option>
@@ -91,6 +101,7 @@ function AddTransaction() {
                     <option value="Clothing">Clothing</option>
                     <option value="Health">Health</option>
                     <option value="Salary">Salary</option>
+                    <option value="Rent">Rent</option>
                     
                     </select>
 

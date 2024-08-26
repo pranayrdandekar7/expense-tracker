@@ -1,7 +1,7 @@
 .transaction_card{
     border: 1px solid gray;
     margin: 20px auto;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     width: 50%;
     background-color: white;
@@ -12,6 +12,7 @@
 .transaction-card-title{
     margin: 0;
     font-size: 25px;
+    margin-bottom: 5px;
 
 }
 .transaction-card-amount{
@@ -21,17 +22,27 @@
     top: 0;
 }
 .transaction-cart-time{
-    font-size: 18px;
+    font-size: 16px;
+   
   
 }
 .transaction-card-category{
     position: absolute;
     right: 10px;
-    bottom: 10px;
-    font-size: 18px;
+    bottom: 5px;
+    font-size: 16px;
     background-color: #6600ff;
     color: white;
     padding: 4px 15px;
     border-radius: 20px;
     
+}
+.deleteBtn{
+    background-color: black;
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 20px;
+    bottom: 5px;
+    cursor: pointer;
 }
