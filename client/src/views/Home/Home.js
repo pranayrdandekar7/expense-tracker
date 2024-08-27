@@ -73,16 +73,7 @@ function Home() {
       <h1 className="main-heading">Hello , {user?.fullname?.toUpperCase()}</h1>
       <h1 className="home-greeting">Welcome To The Expense Tracker</h1>
 
-      {/* <span className="logout-btn" onClick={() => {
-        localStorage.clear()
-        toast.success(`Loged out successfully`)
-
-        setTimeout(() => {
-          window.location.href = "/login"
-        }, 1000)
-
-
-      }}>Logout</span> */}
+    
 
       <div className="net-transactions-card-container">
         <div className="net-transactions-card-item">
