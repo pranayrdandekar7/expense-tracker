@@ -1,26 +1,3 @@
-// import "./Navbar.css"
-// import logo from "./expense.png"
-
-// function Navbar() {
-//     return (
-//         <>
-
-//             <div className="navbar-container">
-//                 <img src={logo} alt="logo" className="navbar-logo" />
-//                <div className="navbar-item-container">
-//                 <span className="navbar-item">Home</span>
-//                 <span className="navbar-item">About</span>
-               
-//                 <span  className="navbar-item">+ Transactions</span>
-//                 <span className="navbar-item">Signup</span>
-//                 </div>
-//             </div >
-
-//         </>
-//     )
-// }
-
-// export default Navbar
 
 import "./Navbar.css"
 import logo from "./expense.png"
@@ -28,6 +5,7 @@ import logo from "./expense.png"
 import {Link} from 'react-router-dom';
 import menuicon from "./menu-icon.png"
 import { useState } from 'react';
+import toast ,{Toaster} from "react-hot-toast"
 
 
 
@@ -56,9 +34,18 @@ function Navbar() {
          <div className='menu-icon-container'>
             <Link to="/" className='menu-navbar-item'>Home</Link>
             <Link to="/about" className='menu-navbar-item'>About</Link>
-    
             <Link to="/add-transaction"className='menu-navbar-item'>+ Transaction</Link>
             <Link to="/signup" className='menu-navbar-item'>Sign Up</Link>
+            <span className='menu-navbar-item' onClick={() => {
+        localStorage.clear()
+        toast.success(`Loged out successfully`)
+
+        setTimeout(() => {
+          window.location.href = "/login"
+        }, 2000)
+
+
+      }}>Logout</span>
            
             
           </div>: null}
@@ -66,14 +53,24 @@ function Navbar() {
         <div className='nav-item-container '>
          <Link to="/" className='nav-item'>Home</Link>
          <Link to="/about"  className='nav-item'>About</Link>
-         
          <Link to="/add-transaction"className='nav-item'>+Transaction</Link>
          <Link to="/signup" className='nav-item'>Signup</Link>
-        
+         
+
        </div>
-       <div>
-         <Link to='/login' className='login '>Logout</Link>
-       </div>
+      
+
+<span className="login" onClick={() => {
+        localStorage.clear()
+        toast.success(`Loged out successfully`)
+
+        setTimeout(() => {
+          window.location.href = "/login"
+        }, 2000)
+
+
+      }}>Logout</span>
+      <Toaster/>
     </div> 
     </>
   )

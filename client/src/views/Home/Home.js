@@ -5,6 +5,7 @@ import axios from "axios"
 import TransactionsCard from "../../components/TransactionsCard/TransactionsCard"
 import AddTransactionIcon from "./add-transaction-icon.png"
 import { Link } from "react-router-dom"
+import Navbar from "../../components/Navabr/Navbar"
 
 
 function Home() {
@@ -68,10 +69,11 @@ function Home() {
 
   return (
     <>
+    <Navbar/>
       <h1 className="main-heading">Hello , {user?.fullname?.toUpperCase()}</h1>
       <h1 className="home-greeting">Welcome To The Expense Tracker</h1>
 
-      <span className="logout-btn" onClick={() => {
+      {/* <span className="logout-btn" onClick={() => {
         localStorage.clear()
         toast.success(`Loged out successfully`)
 
@@ -80,7 +82,7 @@ function Home() {
         }, 1000)
 
 
-      }}>Logout</span>
+      }}>Logout</span> */}
 
       <div className="net-transactions-card-container">
         <div className="net-transactions-card-item">
