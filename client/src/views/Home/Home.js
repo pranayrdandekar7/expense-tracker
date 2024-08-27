@@ -70,8 +70,8 @@ function Home() {
   return (
     <>
     <Navbar/>
-      <h1 className="main-heading">Hello , {user?.fullname?.toUpperCase()}</h1>
-      <h1 className="home-greeting">Welcome To The Expense Tracker</h1>
+      <span className="main-heading">Hello , {user?.fullname?.toUpperCase()}</span>
+      <span className="home-greeting">Welcome To The Expense Tracker</span>
 
     
 

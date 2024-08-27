@@ -61,7 +61,7 @@ function AddTransaction() {
     return (
         <>
             <div>
-                <h2>Add Transaction  For {user.fullname}</h2>
+                <h2 className='home-greeting'>Add Transaction  For {user.fullname} </h2>
 
                 <form className="auth-form">
                     <input type="text"

@@ -2,21 +2,24 @@
     font-size:30px;
     text-align: center;
     margin-top:100px;
+    display: block;
+    font-weight: bold;
 }
 
 
 .home-greeting{
     color: #6600ff;
     text-align: center;
-   margin: 0;
+   margin-top:5px;
    font-size: 30px;
+   display: block;
 }
 
 .net-transactions-card-container{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px auto;
+    margin: 10px auto;
     width: 70%;
    
 }
@@ -61,4 +64,57 @@
 .transaction-card-container{
     max-height: 300px;
     overflow-y: scroll;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1400px){
+    .net-transactions-card-container{
+     
+        margin: 10px auto;
+        width: 90%;
+       
+    }
+    .net-transactions-card-item{
+        width: 160px;
+        padding: 8px;
+    }
+    .net-transaction-cart-amout{
+        font-size: 26px;
+    }
+    .transaction-card-container{
+        max-height: 250px;
+        overflow-y: scroll;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .main-heading{
+        font-size:27px;
+    }
+    .home-greeting{
+       
+       font-size: 25px;
+    }
+    .net-transactions-card-container{
+        width: 80%;
+       
+    }
+    .net-transactions-card-item{
+        width: 150px;
+       
+    }
+
+    .net-transaction-cart-amout{
+      
+        font-size: 25px;
+    }
+    .net-transaction-card-title{
+        font-size: 20px;
+    
+    }
+    .add-transaction-icon{
+        height: 40px;
+        width: 40px;
+        right: 10%;
+        bottom: 40px;
+       
+    }
 }
