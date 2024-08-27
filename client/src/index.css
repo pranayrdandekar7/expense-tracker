@@ -1,5 +1,7 @@
 body{
   background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
 }
 .auth-form{
   width: 400px;
