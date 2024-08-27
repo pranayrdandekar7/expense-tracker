@@ -88,3 +88,51 @@
  
 
 }
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+    .transaction_card{
+        margin: 10px auto;
+        padding:8px;
+        width: 70%;
+       
+    }
+    .transaction-card-title{
+        font-size: 19px;
+    }
+    .transaction-card-amount{
+        font-size: 28px;
+    }
+    .transaction-card-category{
+        font-size: 12px;
+        padding: 3px 15px;
+    }
+    .deleteBtn{
+       
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 550px){
+    .transaction_card{
+      
+        width: 75%;
+       
+    }
+    .transaction-card-title{
+        font-size: 19px;
+    }
+    .transaction-card-amount{
+        font-size: 28px;
+    }
+    .transaction-card-category{
+        font-size: 12px;
+        padding: 3px 15px;
+    }
+    .transaction-cart-time{
+        font-size: 14px;
+    }
+    .deleteBtn{
+       
+        font-size: 11px;
+        left: 140px;
+    }
+}

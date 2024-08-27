@@ -118,3 +118,70 @@
        
     }
 }
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+    .main-heading{
+        font-size:25px;
+    }
+    .home-greeting{
+       
+        font-size: 24px;
+     }
+     .net-transactions-card-container{
+        width: 90%;
+       
+    }
+    .net-transactions-card-item{
+        width: 140px;
+        padding: 7px;
+        margin: 7px;
+       
+    }
+    .net-transaction-cart-amout{
+      
+        font-size: 23px;
+    }
+    .net-transaction-card-title{
+        font-size: 18px;
+    
+    }
+    .add-transaction-icon{
+        height: 35px;
+        width: 35px;
+        right: 30px;
+        bottom: 60px;
+       
+    }
+}
+@media screen and (max-width: 550px){
+    .main-heading{
+        font-size:22px;
+        margin-top: 70px;
+    }
+    .home-greeting{
+       
+        font-size: 22px;
+     }
+     .net-transactions-card-container{
+        width: 90%;
+       
+    }
+    .net-transactions-card-item{
+        width: 130px;
+        padding: 5px;
+       
+    }
+    .net-transaction-cart-amout{
+      
+        font-size: 22px;
+    }
+   
+    .add-transaction-icon{
+        height: 35px;
+        width: 35px;
+        right: 20px;
+        bottom: 60px;
+       
+    }
+
+}
