@@ -8,8 +8,6 @@ import { useState } from 'react';
 import toast, { Toaster } from "react-hot-toast"
 
 
-
-
 function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);

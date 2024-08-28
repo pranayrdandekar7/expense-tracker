@@ -223,16 +223,19 @@
     position: fixed;
     right:20px;
     top: 20px; 
+    z-index: 100;
 }
 .navbar-brand-name{
     font-size: 18px;
     position: absolute;
     left: 30%;
+    top: 20px;
   }
 
     .navbar-container{
       
         height: 65px;  
+       
     }
     .nav-item-container{
        display: none;
@@ -240,6 +243,9 @@
   
     .login{
        display: none;
+    }
+    .menu-icon-container{
+        z-index: 10;
     }
     
    
