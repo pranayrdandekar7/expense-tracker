@@ -2,6 +2,7 @@ import "./TransactionsCard.css"
 import axios from "axios"
 import toast, { Toaster } from "react-hot-toast"
 
+
 function TransactionsCard({ _id, title, amount, category, type, createdAt, loadTransaction }) {
 
   const deleteTransaction = async () => {
@@ -28,6 +29,8 @@ function TransactionsCard({ _id, title, amount, category, type, createdAt, loadT
   }
 
   return (
+    <>
+ 
     <div className="transaction_card">
       <h1 className="transaction-card-title">{title.toUpperCase()}</h1>
 
@@ -46,9 +49,11 @@ function TransactionsCard({ _id, title, amount, category, type, createdAt, loadT
 
       <button type="button" className="deleteBtn" onClick={deleteTransaction}>Delete</button>
 
-      <Toaster />
+   
 
     </div>
+    <Toaster />
+    </>
   )
 }
 

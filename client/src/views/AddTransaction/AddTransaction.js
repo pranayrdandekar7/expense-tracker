@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import toast, { Toaster } from "react-hot-toast"
 import axios from "axios"
+import Navbar from '../../components/Navbar/Navbar'
 
 function AddTransaction() {
 
@@ -60,8 +61,9 @@ function AddTransaction() {
 
     return (
         <>
+        <Navbar/>
             <div>
-                <h2 className='home-greeting'>Add Transaction  For {user.fullname} </h2>
+                <h2 className='home-greeting m-10' style={{marginTop:"120px"}}>Add  Transaction   For  {user?.fullname?.toUpperCase()} </h2>
 
                 <form className="auth-form">
                     <input type="text"
