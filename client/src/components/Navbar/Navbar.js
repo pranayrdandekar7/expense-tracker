@@ -23,7 +23,9 @@ function Navbar() {
 
         <div className="navbar-container "  >
             <div className='logo-container'>
+               
                 <img src={logo} className='logo' alt="logo" />
+                <span className="navbar-brand-name">Expense Tracker</span>
 
                 <img src={menuicon} className='menuicon' alt="logo" onClick={toggleMenu} />
             </div>
