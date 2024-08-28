@@ -6,7 +6,7 @@ import Home from './views/Home/Home';
 import Login from './views/Login/Login';
 import Signup from './views/Signup/Signup';
 import AddTransaction from './views/AddTransaction/AddTransaction.js';
-import Navbar from './components/Navabr/Navbar.js';
+import Navbar from "./components/Navbar/Navbar.js"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

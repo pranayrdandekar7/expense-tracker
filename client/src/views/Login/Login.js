@@ -3,6 +3,7 @@ import "./Login.css"
 import { Link } from "react-router-dom"
 import axios from "axios"
 import toast, { Toaster } from "react-hot-toast"
+import Navbar from "../../components/Navbar/Navbar"
 
 function Login() {
 
@@ -26,7 +27,7 @@ function Login() {
 
       setTimeout(() => {
           window.location.href = "/"
-      }, 500)
+      }, 1000)
 
     }
     else {
@@ -36,6 +37,8 @@ function Login() {
   }
   return (
     <>
+
+    <Navbar/>
       <h1 className="auth-heading">User Login Here</h1>
       <form className="auth-form">
         <input type="email"

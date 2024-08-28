@@ -5,7 +5,8 @@ import axios from "axios"
 import TransactionsCard from "../../components/TransactionsCard/TransactionsCard"
 import AddTransactionIcon from "./add-transaction-icon.png"
 import { Link } from "react-router-dom"
-import Navbar from "../../components/Navabr/Navbar"
+import Navbar from "./../../components/Navbar/Navbar"
+
 
 
 function Home() {

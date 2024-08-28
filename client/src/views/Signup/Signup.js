@@ -3,6 +3,7 @@ import { useState } from 'react';
 import axios from 'axios'
 import toast, { Toaster } from "react-hot-toast"
 import {Link} from "react-router-dom"
+import Navbar from "../../components/Navbar/Navbar";
 
 function Signup() {
 
@@ -40,6 +41,9 @@ function Signup() {
   }
 
   return (<>
+
+  <Navbar/>
+     
     <h1 className="auth-heading">User Registration</h1>
 
     <form className="auth-form">
@@ -71,7 +75,7 @@ function Signup() {
         }} />
 
       <input type="date"
-        placeholder="Enter Your DOB"
+        
         className="user-input"
         value={dob}
         onChange={(e) => {
