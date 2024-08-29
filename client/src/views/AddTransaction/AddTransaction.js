@@ -113,9 +113,9 @@ function AddTransaction() {
 
 
                 </form>
-                <Toaster />
+               
             </div>
-
+            
         </>
     )
 }

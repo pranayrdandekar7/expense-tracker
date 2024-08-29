@@ -64,8 +64,9 @@ function Navbar() {
 
             }}>Logout</span>
         </div> 
-        <Toaster />
+        
     </>
+   
     )
 }
 

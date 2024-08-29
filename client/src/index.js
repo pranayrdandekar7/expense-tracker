@@ -8,7 +8,7 @@ import Signup from './views/Signup/Signup';
 import AddTransaction from './views/AddTransaction/AddTransaction.js';
 import Navbar from "./components/Navbar/Navbar.js"
 import About from './views/About/About.js';
-
+import { Toaster } from 'react-hot-toast';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -46,7 +46,10 @@ const router= createBrowserRouter([
  
 ])
 
-root.render(<RouterProvider router={router}/>) ;
+root.render(<div>
+  <Toaster />
+  <RouterProvider router={router} />
+  </div>) ;
 
 
 

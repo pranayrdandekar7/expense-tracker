@@ -62,7 +62,7 @@ function Login() {
 
       </form>
       <Link to="/signup" className="auth-link">Don't have an account ? <span className="account-auth">Signup</span> </Link>
-      <Toaster />
+      
     </>
   )
 }

@@ -49,10 +49,8 @@ function TransactionsCard({ _id, title, amount, category, type, createdAt, loadT
 
       <button type="button" className="deleteBtn" onClick={deleteTransaction}>Delete</button>
 
-   
-
     </div>
-    <Toaster />
+    
     </>
   )
 }

@@ -126,7 +126,7 @@ function Home() {
       <Link to="/add-transaction">
         <img src={AddTransactionIcon} alt="add-transcation-icon" className="add-transaction-icon" />
       </Link>
-      <Toaster />
+      
     </>
   )
 }
