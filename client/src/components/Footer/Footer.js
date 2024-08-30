@@ -1,5 +1,5 @@
 import "./Footer.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import logo from "./../Navbar/expense.png"
 import mobileIcon from "./Footer_icon/phone-call.png"
 import emailIcon from "./Footer_icon/email.png"
@@ -9,6 +9,7 @@ import watsappIcon from "./Footer_icon/whatsapp.png"
 
 function Footer() {
     return (
+
         <div className="footer">
             <div>
                 <img src={logo} className="footer-logo" alt="logo" />
@@ -16,20 +17,21 @@ function Footer() {
             <div className="footer-quick-links">
                 <span className="Links-heading"> <u>Quick Links </u></span>
                 <Link to={"/"} className="links-item">Home</Link>
-                <Link to={"/about"}  className="links-item">About</Link>
-                <Link to={"/add-transaction"}  className="links-item">Add Transactions</Link>
+                <Link to={"/about"} className="links-item">About</Link>
+                <Link to={"/add-transaction"} className="links-item">Add Transactions</Link>
 
             </div>
             <div className="footer-quick-links">
                 <span className="Links-heading"> <u>Usefull  Links </u></span>
-                <span  className="links-item">Terms And Conditions</span>
-                <span  className="links-item">Privacy Policy</span>
+                <span className="links-item">Terms And Conditions</span>
+                <span className="links-item">Privacy Policy</span>
 
             </div>
             <div className="contact-container">
                 <span className="Links-heading"><u>Contact Us </u> :-</span>
                 <span className="contact-item"> Pranay Dandekar,</span>
-                <span className="contact-item">At Hadapsar,Pune</span>
+                <span className="contact-item">At Hadapsar , Pune , </span>
+                <span className="contact-item">411028</span>
 
                 <div className="footer-icon-container">
                     <a href="tel:9921213852" target="_blank"><img src={mobileIcon} className="footer-icon" /></a>
@@ -40,7 +42,7 @@ function Footer() {
 
                 </div>
             </div>
-
+            <div className="footer-copy-right">All rights reserved @ Pranay Dandekar 2024</div>
         </div>
     )
 }
