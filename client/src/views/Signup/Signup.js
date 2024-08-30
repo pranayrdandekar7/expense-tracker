@@ -4,6 +4,7 @@ import axios from 'axios'
 import toast, { Toaster } from "react-hot-toast"
 import {Link} from "react-router-dom"
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function Signup() {
 
@@ -31,7 +32,7 @@ function Signup() {
       setdob("");
 
       setTimeout(() => {
-        window.location.href = "/login"
+        window.location.href = "/terms-and-conditions"
     }, 400)
 
     }
@@ -88,6 +89,7 @@ function Signup() {
     </form>
     <Link to="/login" className="auth-link">Already have an account ?  <span className="account-auth">Login</span></Link>
       
+      <Footer/>
     
   </>
   )

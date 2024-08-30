@@ -1,11 +1,15 @@
 .footer{
     background-color: #802dfd;
+    
     /* height: 250px; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
+    /* position: fixed; */
+    bottom: 0;
     
 }
 .footer-logo{
@@ -21,7 +25,7 @@
 .Links-heading{
     font-size: 25px;
     font-weight: bold;
-   margin: 15px 0;
+    margin: 15px 0;
 }
 .links-item{
     font-size: 22px;

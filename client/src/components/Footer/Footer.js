@@ -23,8 +23,9 @@ function Footer() {
             </div>
             <div className="footer-quick-links">
                 <span className="Links-heading"> <u>Usefull  Links </u></span>
-                <span className="links-item">Terms And Conditions</span>
-                <span className="links-item">Privacy Policy</span>
+                <Link to={"/terms-and-conditions"} className="links-item">Terms And Conditions</Link>
+                <Link to={"/privacypolicy"} className="links-item">Privacy Policy</Link>
+                <Link to={"/faq"} className="links-item">FAQ</Link>
 
             </div>
             <div className="contact-container">

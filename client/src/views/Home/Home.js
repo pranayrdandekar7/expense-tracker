@@ -6,6 +6,7 @@ import TransactionsCard from "../../components/TransactionsCard/TransactionsCard
 import AddTransactionIcon from "./add-transaction-icon.png"
 import { Link } from "react-router-dom"
 import Navbar from "./../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 
 
 
@@ -123,10 +124,13 @@ function Home() {
           })
         }
       </div>
+      <div className="home-footer-container">
       <Link to="/add-transaction">
         <img src={AddTransactionIcon} alt="add-transcation-icon" className="add-transaction-icon" />
       </Link>
-      
+
+      <Footer className="home-footer"/>
+      </div>
     </>
   )
 }

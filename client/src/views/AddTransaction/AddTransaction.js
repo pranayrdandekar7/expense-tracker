@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import toast, { Toaster } from "react-hot-toast"
 import axios from "axios"
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 function AddTransaction() {
 
@@ -115,6 +116,7 @@ function AddTransaction() {
                 </form>
                
             </div>
+            <Footer/>
             
         </>
     )
