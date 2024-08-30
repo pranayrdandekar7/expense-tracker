@@ -9,6 +9,7 @@ import AddTransaction from './views/AddTransaction/AddTransaction.js';
 import Navbar from "./components/Navbar/Navbar.js"
 import About from './views/About/About.js';
 import { Toaster } from 'react-hot-toast';
+import Footer from './components/Footer/Footer.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -34,6 +35,11 @@ const router= createBrowserRouter([
    element:<Navbar/>
    
   },
+  {
+    path:"/footer",
+    element:<Footer/>
+    
+   },
   {
     path:"/about",
     element:<About/>
