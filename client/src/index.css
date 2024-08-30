@@ -2,10 +2,10 @@ body{
   background-color: whitesmoke;
   padding: 0;
   margin: 0;
-  background-image: url("./background-image.jpg");
+  /* background-image: url("./background-image.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
  
 }
 .auth-form{
