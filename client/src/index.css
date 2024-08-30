@@ -61,6 +61,14 @@ margin-top: 100px;
 .account-auth{
   color: #6600ff;
 }
+.terms-container{
+  padding: 15px;
+}
+.text-primary{
+  color: #6600ff; 
+ margin: 0;
+ 
+}
 
 @media screen and (max-width: 550px){
   .auth-form{
