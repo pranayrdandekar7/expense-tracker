@@ -85,6 +85,7 @@
         margin-top: 30px;
         /* position: fixed; */
         bottom: 0;
+        color: white;
         
     }
     .footer-logo{
@@ -95,15 +96,23 @@
         width: 170px;
         margin:0 auto;
         align-items: start;
+      
        
     }
     .Links-heading{
         font-size: 20px;
         margin: 10px 0;
+       
     }
     .links-item{
         font-size: 18px;
         margin-bottom: 10px;
+        color: white;
+       
+    }
+    .links-item:hover{
+       
+        color: red;
        
     }
     .contact-container{
