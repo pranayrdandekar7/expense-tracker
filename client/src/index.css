@@ -28,6 +28,9 @@ body{
   font-size: 18px;
   border: 1px solid #8533ff;
 }
+.w-100{
+  width: 95%;
+}
 .user-input:focus,.user-input:active{
   outline: none;
 }

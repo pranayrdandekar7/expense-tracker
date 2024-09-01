@@ -84,7 +84,7 @@ function AddTransaction() {
                             setAmount(e.target.value);
 
                         }} />
-                    <select className="user-input" value={type} onChange={(e) => {
+                    <select className="user-input w-100"  value={type} onChange={(e) => {
                         setType(e.target.value);
 
                     }}>
@@ -92,7 +92,7 @@ function AddTransaction() {
                         <option value="debit">Expense</option>
                     </select>
 
-                    <select className="user-input" value={category} onChange={(e) => {
+                    <select className="user-input w-100" value={category} onChange={(e) => {
                         setCategory(e.target.value);
 
                     }}>
