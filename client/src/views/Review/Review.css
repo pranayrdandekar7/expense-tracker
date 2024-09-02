@@ -1,0 +1,30 @@
+.review-heading{
+    text-align: center;
+    font-size:30px;
+    color:  #6600ff;
+    margin-top: 100px;
+}
+.review-box{
+    height: 200px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.review-btn{
+    background-color:#6600ff;
+  padding: 8px 30px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+}
+.review-btn:hover{
+  background-color:#290958;
+}

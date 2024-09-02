@@ -11,6 +11,7 @@ import About from './views/About/About.js';
 import { Toaster } from 'react-hot-toast';
 import Footer from './components/Footer/Footer.js';
 import TermsAndConditions from './views/TermsAndConditions/TermsAndConditions.js';
+import Review from './views/Review/Review.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -49,6 +50,11 @@ const router= createBrowserRouter([
    {
     path:"/terms-and-conditions",
     element:<TermsAndConditions/>
+    
+   },
+   {
+    path:"/review",
+    element:<Review/>
     
    },
   {

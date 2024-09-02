@@ -1,6 +1,6 @@
 import "./TransactionsCard.css"
 import axios from "axios"
-import toast, { Toaster } from "react-hot-toast"
+import toast  from "react-hot-toast"
 
 
 function TransactionsCard({ _id, title, amount, category, type, createdAt, loadTransaction }) {
