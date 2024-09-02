@@ -3,6 +3,8 @@ import "./Review.css"
 import axios from "axios"
 import toast from "react-hot-toast"
 import ReviewCard from "../../components/ReviewCard/ReviewCard"
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 
 function Review() {
    const [user, setUser] = useState()
@@ -73,6 +75,7 @@ function Review() {
 
    return (
       <>
+      <Navbar/>
          <h2 className="review-heading">"Hear Directly from Our Users: Expense Tracker Reviews"</h2>
 
          <textarea type="text"
@@ -111,6 +114,8 @@ function Review() {
             }
 
          </div>
+
+         <Footer/>
 
       </>
 

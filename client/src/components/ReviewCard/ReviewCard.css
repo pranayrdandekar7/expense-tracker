@@ -1,14 +1,15 @@
 .added-review-box{
     width: 350px;
-
     min-height: 200px;
+    max-height: 200px;
     overflow-y: scroll;
     border: 1px solid#6600ff;
-    background-color: aqua;
+    background-color: white;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
     position: relative;
+    cursor: pointer;
 }
 .review-user-name{
     font-size: 25px;
@@ -23,4 +24,9 @@
     top: 5px;
     right: 5px;
     
+}
+.review-text{
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
 }
