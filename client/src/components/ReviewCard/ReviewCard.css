@@ -30,3 +30,11 @@
     padding: 10px;
     text-align: justify;
 }
+@media screen and (max-width: 550px){
+    .added-review-box{
+        width: 80%;
+        min-height: 180px;
+        max-height: 180px;
+       
+    }
+}

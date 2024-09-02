@@ -5,7 +5,7 @@ import logo from "./expense.png"
 import { Link } from 'react-router-dom';
 import menuicon from "./menu-icon.png"
 import { useState } from 'react';
-import toast, { Toaster } from "react-hot-toast"
+import toast from "react-hot-toast"
 
 
 function Navbar() {
@@ -35,7 +35,7 @@ function Navbar() {
                         <Link to="/" className='menu-navbar-item'>Home</Link>
                         <Link to="/about" className='menu-navbar-item'>About</Link>
                         <Link to="/add-transaction" className='menu-navbar-item'>+ Transaction</Link>
-                        <Link to="/signup" className='menu-navbar-item'>Sign Up</Link>
+                        <Link to="/review" className='menu-navbar-item'>Review</Link>
                         <span className='menu-navbar-item' onClick={() => {
                             localStorage.clear()
                             toast.success(`Logged out successfully!!`)
@@ -50,7 +50,7 @@ function Navbar() {
                 <Link to="/" className='nav-item'>Home</Link>
                 <Link to="/about" className='nav-item'>About</Link>
                 <Link to="/add-transaction" className='nav-item'>+Transaction</Link>
-                <Link to="/signup" className='nav-item'>Signup</Link>
+                <Link to="/review" className='nav-item'>Review</Link>
             </div>
 
             <span className="login" onClick={() => {

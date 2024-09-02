@@ -33,3 +33,25 @@
   flex-wrap: wrap;
   justify-content: space-around
 }
+
+@media screen and (max-width: 550px){
+
+  .review-heading{
+   
+    font-size:25px;
+   
+}
+  .review-box{
+    height: 130px;
+    width: 90%;
+    font-size: 18px;
+   
+}
+.review-btn{
+padding: 5px 20px;
+font-size: 17px;
+margin: 25px auto;
+}
+
+}
+

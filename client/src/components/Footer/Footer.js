@@ -25,7 +25,7 @@ function Footer() {
                 <span className="Links-heading"> <u>Usefull  Links </u></span>
                 <Link to={"/terms-and-conditions"} className="links-item">Terms And Conditions</Link>
                 <Link to={"/privacypolicy"} className="links-item">Privacy Policy</Link>
-                <Link to={"/faq"} className="links-item">FAQ</Link>
+                <Link to={"/review"} className="links-item">Review</Link>
 
             </div>
             <div className="contact-container">
