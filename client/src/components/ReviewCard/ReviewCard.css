@@ -1,7 +1,26 @@
-.review-container{
-    width: 300px;
-    height: 150px;
+.added-review-box{
+    width: 350px;
+
+    min-height: 200px;
+    overflow-y: scroll;
     border: 1px solid#6600ff;
+    background-color: aqua;
     margin: 10px;
     border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+.review-user-name{
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #6600ff;
+}
+.review-time{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
 }

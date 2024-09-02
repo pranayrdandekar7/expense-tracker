@@ -34,6 +34,7 @@ function Review() {
       toast.loading(`Loading Review`)
       try {
          const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/reviews`)
+         console.log(response.data.data);  
          toast.dismiss()
          setReviews(response.data.data);
       }
@@ -53,7 +54,7 @@ function Review() {
       try {
          const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/review`,
             {
-               Comment: addReview,
+               comment: addReview,
                user: user._id
             })
 
@@ -61,6 +62,7 @@ function Review() {
             toast.success(`review saved successfully`)
             setAddReview("")
             loadReview()
+            console.log(addReview)
          }
 
       }
@@ -88,21 +90,28 @@ function Review() {
             Add your review
          </button>
 
-         {
-            reviews.map((review) => {
-               const { _id, comment, createdAt } = review
-               return (
-                  <ReviewCard
-                     _id={_id}
-                     key={_id}
-                     comment={comment}
-                     createdAt={createdAt}
-                     loadReview={loadReview}
-                  />
-               )
+         <div className="review-container">
+            {
+               reviews.map((review) => {
+                  const { _id, comment, createdAt } = review
+                  return (
 
-            })
-         }
+                     <ReviewCard
+                        _id={_id}
+                        key={_id}
+                        comment={comment}
+                        createdAt={createdAt}
+                        loadReview={loadReview}
+
+
+                     />
+                  )
+
+               })
+            }
+
+         </div>
+
       </>
 
    )

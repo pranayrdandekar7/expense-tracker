@@ -28,3 +28,8 @@
 .review-btn:hover{
   background-color:#290958;
 }
+.review-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
