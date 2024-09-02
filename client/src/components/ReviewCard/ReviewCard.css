@@ -18,6 +18,7 @@
     margin-top: 15px;
     text-align: center;
     color: #6600ff;
+    margin-bottom: 10px;
 }
 .review-time{
     position: absolute;
@@ -26,6 +27,7 @@
     
 }
 .review-text{
+   
     font-size: 18px;
     padding: 10px;
     text-align: justify;
@@ -36,5 +38,15 @@
         min-height: 180px;
         max-height: 180px;
        
+    }
+    .review-user-name{
+        font-size: 22px;
+        
+    }
+    .review-text{
+      
+        
+        padding: 8px;
+        text-align: justify;
     }
 }

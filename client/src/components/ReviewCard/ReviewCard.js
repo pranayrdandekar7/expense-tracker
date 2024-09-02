@@ -24,7 +24,7 @@ function ReviewCard({ _id, comment, createdAt }) {
 
             <span className="review-user-name">{user?.fullname?.toUpperCase()}</span>
             <span className="review-time">{new Date(createdAt).toLocaleString()}</span>
-            <p className="review-text">{comment}</p>
+            <span className="review-text">{comment}</span>
 
         </div>
 
