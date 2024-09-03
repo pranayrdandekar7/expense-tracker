@@ -34,19 +34,16 @@
 }
 @media screen and (max-width: 550px){
     .added-review-box{
-        width: 80%;
+        width: 90%;
         min-height: 180px;
-        max-height: 180px;
-       
+        max-height: 180px; 
     }
     .review-user-name{
         font-size: 22px;
-        
     }
     .review-text{
-      
-        
         padding: 8px;
         text-align: justify;
+       
     }
 }

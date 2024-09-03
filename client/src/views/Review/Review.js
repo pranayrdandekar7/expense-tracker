@@ -11,32 +11,32 @@ function Review() {
    const [addReview, setAddReview] = useState("")
    const [reviews, setReviews] = useState([]);
 
-
+// console.log(reviews);
    useEffect(() => {
-      const currentUser = JSON.parse(localStorage.getItem("currentUser"))
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"))  
 
       if (currentUser) {
          setUser(currentUser)
-         console.log(user)
+        
       }
       if (!currentUser) {
          window.location.href = "/login"
       }
    }, [])
 
+   // console.log(user);
    useEffect(() => {
       loadReview()
    }, [user])
 
    const loadReview = async () => {
-      if (!user || !user._id) {
+      if (!user ) {
          return
       }
 
       toast.loading(`Loading Review`)
       try {
-         const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/reviews`)
-         console.log(response.data.data);  
+         const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/reviews`) 
          toast.dismiss()
          setReviews(response.data.data);
       }
@@ -54,17 +54,18 @@ function Review() {
       }
 
       try {
+         
          const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/review`,
             {
                comment: addReview,
-               user: user._id
+               user: user?._id
             })
-
+           
          if (response) {
             toast.success(`review saved successfully`)
             setAddReview("")
             loadReview()
-            console.log(addReview)
+            
          }
 
       }
@@ -95,14 +96,15 @@ function Review() {
 
          <div className="review-container">
             {
-               reviews.map((review) => {
-                  const { _id, comment, createdAt } = review
+               reviews.map((review,i) => {
+                  const { _id, comment, user, createdAt } = review
                   return (
 
                      <ReviewCard
                         _id={_id}
-                        key={_id}
+                        key={i}
                         comment={comment}
+                        user={user?.fullname}
                         createdAt={createdAt}
                         loadReview={loadReview}
 

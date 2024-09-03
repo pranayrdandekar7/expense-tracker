@@ -1,28 +1,12 @@
 import "./ReviewCard.css"
-import { useState, useEffect } from "react"
 
-
-
-function ReviewCard({ _id, comment, createdAt }) {
-
-    const [user, setUser] = useState("")
-
-
-    useEffect(() => {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"))
-
-        if (currentUser) {
-            setUser(currentUser)
-            console.log(user)
-        }
-
-    }, [])
+function ReviewCard({ _id, comment, createdAt, user }) {
 
     return (
 
         <div className="added-review-box">
 
-            <span className="review-user-name">{user?.fullname?.toUpperCase()}</span>
+            <span className="review-user-name">{user.toUpperCase()}</span>
             <span className="review-time">{new Date(createdAt).toLocaleString()}</span>
             <span className="review-text">{comment}</span>
 

@@ -3,10 +3,11 @@ import Review from "../models/Review.js"
 
 const postReview = async (req, res) => {
 
-    const { comment } = req.body
+    const { comment ,user } = req.body
 
     const review = new Review({
-        comment
+        comment,
+        user
     })
 
     try {
@@ -30,7 +31,7 @@ const postReview = async (req, res) => {
 
 const getReview = async (req, res) => {
     try {
-        const allReview = await Review.find().sort({ createdAt: -1 });
+        const allReview = await Review.find().populate('user').sort({ createdAt: -1 });
 
         console.log("allReview")
         res.status(200).json({
