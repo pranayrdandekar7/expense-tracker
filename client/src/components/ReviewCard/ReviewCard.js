@@ -6,7 +6,7 @@ function ReviewCard({ _id, comment, createdAt, user }) {
 
         <div className="added-review-box">
 
-            <span className="review-user-name">{user.toUpperCase()}</span>
+            <span className="review-user-name">{user?.toUpperCase()}</span>
             <span className="review-time">{new Date(createdAt).toLocaleString()}</span>
             <span className="review-text">{comment}</span>
 
