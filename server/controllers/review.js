@@ -9,6 +9,14 @@ const postReview = async (req, res) => {
         comment,
         user
     })
+    if(!user){
+        return res.status(404).json({
+            success:false,
+            message:"user must be login for send reviews",
+            data:null
+            
+        })
+    }
 
     try {
 

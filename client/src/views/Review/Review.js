@@ -48,11 +48,11 @@ function Review() {
 
    const AddingReview = async () => {
 
-      if (!addReview) {
+      if (!addReview ) {
          toast.error(`you should write something about our expense tracker`)
          return;
       }
-
+      
       try {
          
          const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/review`,
