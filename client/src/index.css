@@ -73,6 +73,7 @@ margin: 7px;
  
 }
 
+
 @media screen and (max-width: 550px){
   .auth-form{
     width: 90%;
