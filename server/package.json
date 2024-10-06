@@ -17,5 +17,8 @@
     "mongoose": "^8.5.2",
     "nodemailer": "^6.9.15",
     "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.16"
   }
 }

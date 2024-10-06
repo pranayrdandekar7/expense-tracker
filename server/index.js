@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
-import nodemailer from "nodemailer"
+
 
 dotenv.config();
 
@@ -12,6 +12,8 @@ import { postSignup ,postLogin} from './controllers/user.js';
 import { postTransaction,getTransactions,deleteTransaction } from './controllers/transaction.js';
 import { getHealth } from './controllers/health.js';
 import {postReview,getReview} from "./controllers/review.js"
+
+import {postSendMail} from "./controllers/sendmail.js"
 
 
 const app = express();
@@ -46,6 +48,8 @@ app.delete("/transaction/:id",deleteTransaction)
 
 app.post("/review",postReview)
 app.get("/reviews",getReview)
+
+app.post("/sendemail/:userId",postSendMail)
 
 
 

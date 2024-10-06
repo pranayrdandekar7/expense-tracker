@@ -15,7 +15,6 @@ const emailSchema = new Schema({
     },
     status:{
         type:String,
-       
         enum:["sent","failed"],
         default:"sent",
         required:true,
