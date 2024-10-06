@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
+import nodemailer from "nodemailer"
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ import {postReview,getReview} from "./controllers/review.js"
 
 
 const app = express();
-app.use(express.json());
+app.use(express.json()); 
 app.use(cors());
 
 // connect to mongo DB
@@ -28,6 +29,7 @@ const connectDB = async () => {
    }
 }
 connectDB();
+
 
 app.get('/health',getHealth )
 
@@ -44,6 +46,8 @@ app.delete("/transaction/:id",deleteTransaction)
 
 app.post("/review",postReview)
 app.get("/reviews",getReview)
+
+
 
 
 
