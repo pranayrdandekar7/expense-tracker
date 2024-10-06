@@ -18,8 +18,6 @@ const transporter = nodemailer.createTransport({
 const postSendMail = async (req, res) => {
 
     const { token } = req.headers;
-
-    console.log("menahija")
    
     if (token !== process.env.TOKEN) {
         return res.status(401).json({
