@@ -11,6 +11,11 @@
   }
 
   @media  screen and (max-width:550px) {
+    .heading{
+      margin-left: 10px;
+      font-size: 25px;
+      color:#3385ff;
+    }
     .conditions{
         font-size: 18px;
         margin-left: 20px;
