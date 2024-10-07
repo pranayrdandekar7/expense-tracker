@@ -3,9 +3,11 @@
     margin-left: 30px;
     display: block;
     margin: 15px;
+    color:#009933;
   }
   .heading{
     margin-left: 20px;
+    color:#3385ff;
   }
 
   @media  screen and (max-width:550px) {

@@ -42,7 +42,7 @@ const TermsAndConditions = () => {
       <h2 className="text-primary">5. Contact Us :</h2>
       <span className="conditions">
         If you have any questions or concerns about these terms, please contact us at 
-        <a href="mailto:pranayrdandekar7@gmail.com" style={{textDecoration:"none"}}> pranayrdandekar7@gmail.com </a>
+        <a href="mailto:pranayrdandekar7@gmail.com" style={{textDecoration:"none", color:"#3385ff",backgroundColor:"white",marginLeft:"10px"}}> pranayrdandekar7@gmail.com </a>
       </span>
       <div className="accept-section">
         <button
