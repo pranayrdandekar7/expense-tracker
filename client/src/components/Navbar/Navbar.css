@@ -12,9 +12,9 @@
     flex-wrap: wrap;
     height: 80px;
     width: 100%;
-    background-color: #802dfd;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
     border-bottom: 1px solid rgba(99, 92, 92, 0.1);
-    box-shadow: 0 0 10px gray;
+    /* box-shadow: 0 0 10px gray; */
     position: fixed;
     top: 0;
     z-index: 100;
@@ -37,13 +37,13 @@
 /* for small size */
 .menu-icon-container{
     height: 250px;
-    background-color:#7b26fc;
+    background-color:#ffd1b3;
     border-radius: 10px;
     width: 200px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    color: white;
+    color: black;
      justify-content: space-evenly;
     padding-left: 20px;
 }
@@ -77,12 +77,12 @@
 .nav-item{
     font-size: 20px;
     text-decoration: none;
-    color:white;
+    color:black;
     font-weight: bold;
    
 }
 .nav-item:hover{
-    color:rgb(77, 29, 29);
+    color:white;
     
 }
 .login{

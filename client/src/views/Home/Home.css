@@ -4,10 +4,11 @@
     margin-top:100px;
     display: block;
     font-weight: bold;
+    color: #3099df;
 }
 
 .home-greeting{
-    color: #6600ff;
+    color:white;
     text-align: center;
    margin-top:5px;
    font-size: 30px;
@@ -24,7 +25,7 @@
 }
 .net-transactions-card-item{
     width: 200px;
-    border: 4px double #6600ff;
+    border: 4px double #4db8ff;
     padding: 10px;
     border-radius: 10px;
     background-color: white;
@@ -50,7 +51,7 @@
 .add-transaction-icon{
     height: 50px;
     width: 50px;
-    border: 3px double #6600ff;
+    border: 3px double #4db8ff;
     background-color: white;
     border-radius: 50%;
     padding: 5px;

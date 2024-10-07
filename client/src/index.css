@@ -2,10 +2,10 @@ body{
   background-color: whitesmoke;
   padding: 0;
   margin: 0;
-  /* background-image: url("./background-image.jpg");
+  background-image: url("https://easyretro.io/blog/assets/images/ms-how-blur-bg-cover.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
  
 }
 .auth-form{
@@ -13,9 +13,9 @@ body{
   padding: 10px;
   display: block;
   margin: 40px auto;
-  border: 2px double #6600ff;
+  border: 2px double black;
   border-radius: 15px;
-  background-color: #ccb4f0;
+  background-color: whitesmoke;
 }
 
 .user-input{
@@ -26,7 +26,7 @@ body{
   padding-left: 10px;
   border-radius: 10px;
   font-size: 18px;
-  border: 1px solid #8533ff;
+  border: 1px solid black;
 }
 .w-100{
   width: 95%;
@@ -37,11 +37,11 @@ body{
 .auth-heading{
   text-align: center;
   font-size:30px;
-  color:  #6600ff;
+  color:white;
   margin-top: 100px;
 }
 .auth-btn{
-  background-color:#6600ff;
+  background-color:#3099df;
   padding: 8px 30px;
   border: none;
   color: white;
@@ -52,17 +52,17 @@ body{
   margin: 30px auto;
 }
 .auth-btn:hover{
-  background-color:#290958;
+  background-color:#005791;
 }
 .auth-link{
   font-size: 30px;
-  color: black;
+  color: white;
   display: block;
   text-align: center;
   text-decoration: none;
 }
 .account-auth{
-  color: #6600ff;
+  color: #3099df
 }
 .terms-container{
   padding: 15px;

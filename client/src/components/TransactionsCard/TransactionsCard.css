@@ -5,7 +5,7 @@
     border-radius: 10px;
     width: 50%;
     background-color: white;
-    box-shadow: 0 0 10px  gray;
+    /* box-shadow: 0 0 10px  gray; */
     position: relative;
     cursor: pointer;
 }
@@ -29,8 +29,8 @@
     right: 10px;
     bottom: 5px;
     font-size: 16px;
-    background-color: #6600ff;
-    color: white;
+    background-color: #4db8ff;
+    color: black;
     padding: 4px 15px;
     border-radius: 20px;
     
