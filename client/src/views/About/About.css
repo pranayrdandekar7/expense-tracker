@@ -33,9 +33,51 @@
     color: white;
     font-size: 20px;
     text-align: justify;
-    margin-left: 10px;
-
+    margin-left: 10px;  
+   
+}
+.owner-card{
+    height: 300px;
+    width: 250px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow:  0 0 5px 3px gray;
+}
+.developer-img{
+    height: 170px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 7px 8px 5px 1px gray;
     
+}
+.developer-img:hover{
+    transform: scale(1.1);
+}
+.about-card-icon-container{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.about-card-icon{
+    height: 30px;
+}
+.card-owner-name{
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+.card-owner-profession{
+    display: block;
+    text-align: center;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 550px){
