@@ -1,0 +1,37 @@
+.about-conatiner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+.header-img{
+
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+
+  
+}
+.about-us-lines-container{
+    width: 700px;
+    height: 280px;
+   
+
+}
+.about-heading{
+    font-size: 30px;
+    color: #3099df;
+    font-weight: BOLD;
+    margin-top: 100px;
+    text-align: center;
+}
+.about-us-lines{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 40px;
+    
+}

@@ -10,9 +10,9 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: "pranaydandekar6@gmail.com",
-        pass: "ktti bgjo jsad fxly"
-    }
+        user: process.env.SEND_EMAIL_ID,
+        pass: process.env.SEND_EMAIL_PASS
+     }
 });
 
 const postSendMail = async (req, res) => {
