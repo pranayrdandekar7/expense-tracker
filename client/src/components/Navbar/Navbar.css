@@ -235,10 +235,11 @@
     .navbar-container{
       
         height: 65px;  
-       
+      
     }
     .nav-item-container{
        display: none;
+      
     }
   
     .login{
